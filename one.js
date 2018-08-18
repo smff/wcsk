@@ -2,7 +2,7 @@ export default class DanielInspiration extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = this.shaddowRootInnerHtml;
+    this.shadowRoot.innerHTML = this.shadowRootInnerHtml;
   }
 
   getNode(node) {
@@ -21,7 +21,7 @@ export default class DanielInspiration extends HTMLElement {
     return '';
   }
 
-  get shaddowRootInnerHtml() {
+  get shadowRootInnerHtml() {
     return `
         <style>
             ${this.css}
