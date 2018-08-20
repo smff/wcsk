@@ -1,10 +1,11 @@
-import DanielInspiration from './one.js';
+import CustomComponent from './CustomComponent.js';
 
-class SomeComponent extends DanielInspiration {
+class DemoComponent extends CustomComponent {
   constructor() {
     super();
   }
 
+  // runs when the component is mounted
   connectedCallback() {
     this.getNode('amazing').onclick = () => {
       alert('amazing result');
@@ -27,4 +28,4 @@ class SomeComponent extends DanielInspiration {
   }
 }
 
-window.customElements.define('some-component', SomeComponent);
+window.customElements.define('demo-component', DemoComponent);
